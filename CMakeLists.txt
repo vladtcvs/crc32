@@ -1,4 +1,4 @@
-project(crc32)
+project(crc32 C)
 cmake_minimum_required(VERSION 3.13)
 
 set(DEST_DIR "${CMAKE_INSTALL_PREFIX}")

@@ -1,11 +1,11 @@
 prefix=@DEST_DIR@
 exec_prefix=${prefix}
 libdir=${prefix}/lib
-includedir=${prefix}/include
+includedir=${prefix}/include/crc
 
 Name: libcrc32
 Description: CRC32 by Gary S. Brown
 Version: 1.0
 
-Libs: -L${libdir} @PRIVATE_LIBS@
+Libs: -L${libdir} -lcrc32 @PRIVATE_LIBS@
 Cflags: -I${includedir}
